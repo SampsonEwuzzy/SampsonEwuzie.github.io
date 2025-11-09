@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Posts | Sampson Ikechukwu Ewuzie</title>
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<script>
+		MathJax = {
+			tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+			svg: { fontCache: 'global' }
+		};
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<body>
+	<header class="site-header">
+		<div class="wrap">
+			<a href="index.html" class="brand">Sampson Ewuzie</a>
+			<nav class="main-nav">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="posts.html">Posts</a>
+				<a href="contact.html">Contact</a>
+				<button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+					🌙
+				</button>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="wrap">
+				<h1>My Posts</h1>
+				<p class="lead">
+					Tutorials, Projects, and Reflections on Power Engineering
+				</p>
+			</div>
+		</section>
+
+		<section class="posts-section">
+			<div class="wrap">
+				<!-- Category Tabs -->
+				<div class="category-tabs">
+					<button class="tab-btn active" data-category="all">All</button>
+					<button class="tab-btn" data-category="tutorials">Tutorials</button>
+					<button class="tab-btn" data-category="projects">Projects</button>
+					<button class="tab-btn" data-category="reflections">
+						Reflections
+					</button>
+				</div>
+
+				<!-- Posts Grid -->
+				<div class="posts-grid" id="posts-grid">
+					<!-- JS populates this -->
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap">
+			<p>&copy; 2025 Sampson Ikechukwu Ewuzie | Built with HTML/CSS/JS</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

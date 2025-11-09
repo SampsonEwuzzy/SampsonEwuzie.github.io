@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gauss-Seidel Power Flow | Sampson Ewuzie</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- MATHJAX -->
+    <script>
+        MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a href="../index.html" class="brand">Sampson Ewuzie</a>
+            <nav class="main-nav">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../posts.html">Posts</a>
+                <a href="../contact.html">Contact</a>
+                <button id="theme-toggle" class="theme-toggle">Moon</button>
+            </nav>
+        </div>
+        <script>
+            MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    </header>
+
+    <main class="post-content">
+        <article class="wrap">
+            <h1>Gauss-Seidel Power Flow Method</h1>
+            <p class="post-meta">2025-11-11 • Tutorial</p>
+
+            <p>The Gauss-Seidel method solves:</p>
+            $$ V_i^{(k+1)} = \frac{1}{Y_{ii}} \left( \frac{P_i - jQ_i}{V_i^{(k)*}} - \sum_{j \neq i} Y_{ij} V_j^{(k)}
+            \right) $$
+
+            <h2>MATLAB Code</h2>
+            <pre><code>Ybus = [...];
+V = ones(n,1); theta = zeros(n,1);
+for k = 1:100
+  for i = 2:n
+    sumYV = 0;
+    for j = 1:n
+      if j ~= i
+        sumYV = sumYV + Ybus(i,j) * V(j) * exp(1j*theta(j));
+      end
+    end
+    V(i) = (1/Ybus(i,i)) * ((P(i)-1j*Q(i))/conj(V(i)) - sumYV);
+  end
+end</code></pre>
+
+            <p><a href="../posts.html" class="btn btn-outline">Back to Posts</a></p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© 2025 Sampson Ikechukwu Ewuzie</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
