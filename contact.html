@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Contact | Sampson Ikechukwu Ewuzie</title>
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 	<script>
 		MathJax = {
 			tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
@@ -15,7 +16,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 
-<body>
+<body class="contact-page">
 	<header class="site-header">
 		<div class="wrap">
 			<a href="index.html" class="brand">Sampson Ewuzie</a>
@@ -25,7 +26,7 @@
 				<a href="posts.html">Posts</a>
 				<a href="contact.html">Contact</a>
 				<button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-					🌙
+					<i class="fas fa-moon"></i>
 				</button>
 			</nav>
 		</div>
@@ -42,32 +43,57 @@
 		<section class="contact-section">
 			<div class="wrap">
 				<div class="contact-grid">
+					<!-- Contact Info -->
 					<div class="contact-info">
 						<h2>Connect With Me</h2>
 						<ul class="contact-list">
 							<li>
-								<a href="mailto:sampson.ewuzie@outlook.com">📧 sampson.ewuzie@outlook.com</a>
+								<a href="mailto:sampson.ewuzie@outlook.com" class="contact-link">
+									<i class="fas fa-envelope"></i>
+									sampson.ewuzie@outlook.com
+								</a>
 							</li>
 							<li>
-								<a href="https://linkedin.com/in/sampsonewuzie" target="_blank">💼 LinkedIn</a>
+								<a href="https://linkedin.com/in/sampsonewuzie" target="_blank" class="contact-link">
+									<i class="fab fa-linkedin"></i>
+									LinkedIn Profile
+								</a>
 							</li>
 							<li>
-								<a href="https://github.com/SampsonEwuzie" target="_blank">🐙 GitHub</a>
+								<a href="https://github.com/SampsonEwuzie" target="_blank" class="contact-link">
+									<i class="fab fa-github"></i>
+									GitHub Repos
+								</a>
 							</li>
 						</ul>
 					</div>
+
+					<!-- Contact Form -->
 					<div class="contact-form">
 						<h2>Send a Message</h2>
-						<form id="contact-form">
-							<label for="name">Your Name</label>
-							<input type="text" id="name" required />
-							<label for="email">Your Email</label>
-							<input type="email" id="email" required />
-							<label for="message">Message</label>
-							<textarea id="message" rows="5" required></textarea>
+						<form id="contact-form" novalidate>
+							<div class="form-group">
+								<label for="name">Your Name</label>
+								<input type="text" id="name" required />
+								<span class="error-msg"></span>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Your Email</label>
+								<input type="email" id="email" required />
+								<span class="error-msg"></span>
+							</div>
+
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea id="message" rows="5" required></textarea>
+								<span class="error-msg"></span>
+							</div>
+
 							<button type="submit" class="btn btn-primary">
-								Send Message
+								<i class="fas fa-paper-plane"></i> Send Message
 							</button>
+							<p class="form-status" aria-live="polite"></p>
 						</form>
 					</div>
 				</div>
@@ -77,7 +103,11 @@
 
 	<footer class="site-footer">
 		<div class="wrap">
-			<p>&copy; 2025 Sampson Ikechukwu Ewuzie</p>
+			<p>
+				&copy; 2025 Sampson Ikechukwu Ewuzie |
+				<a href="https://linkedin.com/in/sampsonewuzie" target="_blank">LinkedIn</a> |
+				<a href="mailto:sampson.ewuzie@outlook.com">Email</a>
+			</p>
 		</div>
 	</footer>
 

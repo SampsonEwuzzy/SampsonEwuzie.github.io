@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>About | Sampson Ikechukwu Ewuzie</title>
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
@@ -18,17 +19,10 @@
 				<a href="posts.html">Posts</a>
 				<a href="contact.html">Contact</a>
 				<button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-					🌙
+					<i class="fas fa-moon"></i>
 				</button>
 			</nav>
 		</div>
-		<script>
-			MathJax = {
-				tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-				svg: { fontCache: 'global' }
-			};
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 	</header>
 
 	<main>
@@ -44,24 +38,40 @@
 		<section class="about-content">
 			<div class="wrap">
 				<div class="about-grid">
-					<div class="profile-photo">
-						<!-- Add your photo: <img src="assets/images/profile.jpg" alt="Sampson"> -->
-						<div class="placeholder-photo">SE</div>
+					<!-- Profile Photo + Name + CV Button -->
+					<div class="profile-card">
+						<div class="profile-photo">
+							<div class="profile-image-wrapper">
+								<img src="assets/images/profile.jpg" alt="Sampson Ikechukwu Ewuzie" class="profile-img">
+								onerror="this.style.display='none'">
+								<div class="profile-placeholder">
+									<span class="initials">SE</span>
+								</div>
+							</div>
+							<h2 class="profile-name">Sampson Ikechukwu Ewuzie</h2>
+							<p class="profile-title">M.Eng Candidate, Power Systems</p>
+						</div>
+
+						<!-- Download CV Button -->
+						<a href="assets/docs/Sampson_Ewuzie_CV_2025.pdf" class="btn btn-cv" download>
+							<i class="fas fa-download"></i> Download CV
+						</a>
 					</div>
+
+					<!-- Bio -->
 					<div class="bio">
 						<p>
-							I'm Sampson Ikechukwu Ewuzie, an M.Eng candidate in Power
-							Engineering. With expertise in smart grids, HVDC transmission,
-							and renewable integration, I use tools like MATLAB, PSCAD, and
-							ETAP to solve real-world energy challenges.
+							I'm Sampson Ikechukwu Ewuzie, an M.Eng candidate in Power Engineering. With expertise in
+							smart grids, HVDC transmission, and renewable integration, I use tools like MATLAB, PSCAD,
+							and ETAP to solve real-world energy challenges.
 						</p>
 						<p>
-							Skills: Power Flow Analysis, Microgrid Design, Python
-							Automation, Renewable Modeling.
+							<strong>Skills:</strong> Power Flow Analysis, Microgrid Design, Python Automation,
+							Renewable Modeling.
 						</p>
 						<p>
-							This site showcases my tutorials, projects, and reflections to
-							connect with fellow engineers and recruiters.
+							This site showcases my tutorials, projects, and reflections to connect with fellow
+							engineers and recruiters.
 						</p>
 						<div class="bio-actions">
 							<a href="contact.html" class="btn btn-primary">Get in Touch</a>
@@ -77,11 +87,20 @@
 		<div class="wrap">
 			<p>
 				&copy; 2025 Sampson Ikechukwu Ewuzie |
-				<a href="https://linkedin.com/in/sampsonewuzie">LinkedIn</a> |
+				<a href="https://linkedin.com/in/sampsonewuzie" target="_blank">LinkedIn</a> |
 				<a href="mailto:sampson.ewuzie@outlook.com">Email</a>
 			</p>
 		</div>
 	</footer>
+
+	<!-- MathJax -->
+	<script>
+		MathJax = {
+			tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+			svg: { fontCache: 'global' }
+		};
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
 	<script src="assets/js/script.js"></script>
 </body>

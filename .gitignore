@@ -1,0 +1,20 @@
+# Virtual Environment
+# This ignores the 'sammmy' folder you just created
+sammmy/
+venv/
+*.venv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Sensitive files
+.env
+*.env
+
+# VS Code settings
+.vscode/
+
+# Database files
+*.sqlite3
+db.sqlite3

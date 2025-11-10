@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Posts | Sampson Ikechukwu Ewuzie</title>
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 	<script>
 		MathJax = {
 			tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
@@ -25,7 +26,7 @@
 				<a href="posts.html">Posts</a>
 				<a href="contact.html">Contact</a>
 				<button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-					🌙
+					<i class="fas fa-moon"></i>
 				</button>
 			</nav>
 		</div>
@@ -35,8 +36,13 @@
 		<section class="hero">
 			<div class="wrap">
 				<h1>My Posts</h1>
-				<p class="lead">
-					Tutorials, Projects, and Reflections on Power Engineering
+				<p class="section-subtitle">
+					Practical insights into <span class="highlight">power system engineering</span>, <span
+						class="highlight">electricity market
+						operations</span>, and <span class="highlight">revenue protection with smart metering</span> —
+					through in-depth
+					tutorials,
+					real-world projects, and reflective analyses.
 				</p>
 			</div>
 		</section>
@@ -44,18 +50,34 @@
 		<section class="posts-section">
 			<div class="wrap">
 				<!-- Category Tabs -->
-				<div class="category-tabs">
-					<button class="tab-btn active" data-category="all">All</button>
-					<button class="tab-btn" data-category="tutorials">Tutorials</button>
-					<button class="tab-btn" data-category="projects">Projects</button>
-					<button class="tab-btn" data-category="reflections">
+				<div class="category-tabs" role="tablist" aria-label="Post categories">
+					<button class="tab-btn active" data-category="all" role="tab" aria-selected="true">
+						All
+					</button>
+					<button class="tab-btn" data-category="tutorials" role="tab">
+						Tutorials
+					</button>
+					<button class="tab-btn" data-category="projects" role="tab">
+						Projects
+					</button>
+					<button class="tab-btn" data-category="reflections" role="tab">
 						Reflections
 					</button>
 				</div>
 
+				<!-- Loading State -->
+				<div id="loading" class="loading" aria-hidden="true">
+					<i class="fas fa-spinner fa-spin"></i> Loading posts...
+				</div>
+
 				<!-- Posts Grid -->
-				<div class="posts-grid" id="posts-grid">
-					<!-- JS populates this -->
+				<div class="posts-grid" id="posts-grid" role="tabpanel">
+					<!-- JS will populate -->
+				</div>
+
+				<!-- No Results -->
+				<div id="no-results" class="no-results" hidden>
+					<p>No posts found in this category.</p>
 				</div>
 			</div>
 		</section>
@@ -63,7 +85,11 @@
 
 	<footer class="site-footer">
 		<div class="wrap">
-			<p>&copy; 2025 Sampson Ikechukwu Ewuzie | Built with HTML/CSS/JS</p>
+			<p>
+				&copy; 2025 Sampson Ikechukwu Ewuzie |
+				<a href="https://linkedin.com/in/sampsonewuzie" target="_blank">LinkedIn</a> |
+				<a href="mailto:sampson.ewuzie@outlook.com">Email</a>
+			</p>
 		</div>
 	</footer>
 

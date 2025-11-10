@@ -5,15 +5,22 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Sampson Ikechukwu Ewuzie | Power Systems Engineer</title>
-	<meta name="description" content="M.Eng Student sharing tutorials on smart grids, renewables, and power systems." />
+	<meta name="description"
+		content="M.Eng student in Power Engineering. Tutorials on smart grids, HVDC, renewables. Built with MATLAB, PSCAD, Python." />
+
+	<!-- Open Graph / Social -->
+	<meta property="og:title" content="Sampson Ewuzie | Power Systems Engineer" />
+	<meta property="og:description" content="Smart grids, renewables, and power systems innovation." />
+	<meta property="og:image" content="https://i.ibb.co/0jZDZ3M/sampson-headshot.jpg" />
+	<meta property="og:url" content="https://sampsonewuzie.github.io" />
+	<meta property="og:type" content="website" />
+
 	<link rel="stylesheet" href="assets/css/style.css" />
-	<script>
-		MathJax = {
-			tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-			svg: { fontCache: 'global' }
-		};
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+	<!-- Preload Critical Image -->
+	<link rel="preload" href="assets/images/profile.jpg" as="image">
 </head>
 
 <body>
@@ -25,8 +32,8 @@
 				<a href="about.html">About</a>
 				<a href="posts.html">Posts</a>
 				<a href="contact.html">Contact</a>
-				<button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
-					🌙
+				<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+					<i class="fas fa-moon"></i>
 				</button>
 			</nav>
 		</div>
@@ -36,14 +43,26 @@
 		<!-- Hero Section -->
 		<section class="hero">
 			<div class="wrap">
-				<h1>Welcome to My Power Engineering World</h1>
-				<p class="lead">
-					M.Eng Student | Smart Grids & Renewables | Tutorials, Projects,
-					Reflections
-				</p>
-				<div class="hero-actions">
-					<a href="posts.html" class="btn btn-primary">Explore Posts</a>
-					<a href="about.html" class="btn btn-outline">Learn About Me</a>
+				<div class="hero-content">
+					<h1>Powering the Future with <span class="highlight">Smart Grids</span> & <span
+							class="highlight">Renewables</span></h1>
+					<p class="lead">
+						M.Eng Candidate & Market Settlement Manager | NESI Expert | Smart Metering, Revenue Protection &
+						Utility-Scale
+						Energy Audits
+					</p>
+					<div class="hero-actions">
+						<a href="posts.html" class="btn btn-primary">
+							<i class="fas fa-book-open"></i> Explore Posts
+						</a>
+						<a href="about.html" class="btn btn-outline">
+							<i class="fas fa-user"></i> About Me
+						</a>
+					</div>
+				</div>
+				<div class="hero-image">
+					<img src="assets/images/profile.jpg" alt="Sampson Ikechukwu Ewuzie - Power Systems Engineer"
+						class="hero-profile" loading="lazy">
 				</div>
 			</div>
 		</section>
@@ -52,8 +71,17 @@
 		<section class="carousel-section">
 			<div class="wrap">
 				<h2>Recent Highlights</h2>
-				<div class="carousel" id="post-carousel">
-					<!-- JS populates this -->
+				<div class="carousel-container">
+					<div class="carousel" id="post-carousel" role="region" aria-label="Recent posts carousel">
+						<!-- JS populates -->
+					</div>
+					<!-- Arrows INSIDE carousel -->
+					<button class="carousel-btn prev" aria-label="Previous post">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<button class="carousel-btn next" aria-label="Next post">
+						<i class="fas fa-chevron-right"></i>
+					</button>
 				</div>
 			</div>
 		</section>
@@ -62,8 +90,9 @@
 	<footer class="site-footer">
 		<div class="wrap">
 			<p>
-				&copy; 2025 Sampson Ikechukwu Ewuzie | Built with HTML/CSS/JS |
-				<a href="https://github.com/SampsonEwuzie">GitHub</a>
+				&copy; 2025 Sampson Ikechukwu Ewuzie |
+				<a href="https://linkedin.com/in/sampsonewuzie" target="_blank" rel="noopener">LinkedIn</a> |
+				<a href="https://github.com/SampsonEwuzie" target="_blank" rel="noopener">GitHub</a>
 			</p>
 		</div>
 	</footer>
