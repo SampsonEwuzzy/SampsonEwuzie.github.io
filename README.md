@@ -2,7 +2,7 @@
 
 Personal website and technical blog of **Sampson Ikechukwu Ewuzie** – M.Eng Candidate in Power Engineering, Market Settlement Manager in the Nigerian Electricity Supply Industry (NESI), and expert in smart grids, HVDC, renewable energy integration, smart metering, revenue protection, and utility-scale energy audits.
 
-Live site: (https://github.com/SampsonEwuzzy/SampsonEwuzie.github.io)
+Live site: (https://sampsonewuzzy.github.io/SampsonEwuzie.github.io/)
 
 ## About This Repository
 
