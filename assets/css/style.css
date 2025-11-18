@@ -951,3 +951,168 @@ a:hover {
     padding: 1.5rem;
   }
 }
+
+/* ========================================
+   ARTICLE / POST PAGES
+   ======================================== */
+.post-content {
+  padding: 4rem 0;
+  background: var(--bg);
+}
+
+.post-content article {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem 2.5rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.post-content h1 {
+  font-size: clamp(2.2rem, 5vw, 2.8rem);
+  margin-bottom: 0.75rem;
+}
+
+.post-content .post-meta {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+}
+
+.post-content h2 {
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+  color: var(--accent-dark);
+  border-left: 4px solid var(--accent);
+  padding-left: 0.6rem;
+}
+
+.post-content h3 {
+  font-size: 1.25rem;
+  color: var(--accent);
+  margin-top: 1.75rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 1rem 0 1rem 1.5rem;
+  padding-left: 1rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content p {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.post-content strong {
+  color: var(--accent-dark);
+}
+
+/* Image placeholders / Figures */
+.image-placeholder {
+  margin: 2rem 0;
+  padding: 3rem 1rem;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  font-style: italic;
+  color: var(--text-muted);
+  background: var(--section-bg);
+  transition: var(--transition);
+}
+
+.image-placeholder:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* When you replace placeholders with real images */
+.post-content img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  margin: 2rem 0;
+  display: block;
+}
+
+/* Code blocks (for math or scripts) */
+.post-content pre {
+  background: var(--section-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: "Fira Code", monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: var(--shadow-sm);
+}
+
+.post-content code {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+}
+
+/* Tables (if you add any later) */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.post-content th {
+  background: var(--section-bg);
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Reference list styling */
+.post-content ol {
+  counter-reset: ref-counter;
+}
+
+.post-content ol li::marker {
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+/* Button back to posts */
+.post-content .btn-outline {
+  margin-top: 2rem;
+}
+
+/* ========================================
+   DARK MODE ADJUSTMENTS
+   ======================================== */
+.dark-mode .post-content article {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+.dark-mode .image-placeholder {
+  background: var(--card-bg);
+  border-color: var(--border);
+  color: var(--text-muted);
+}
+
+.dark-mode .post-content pre {
+  background: var(--card-bg);
+  border-color: var(--border);
+}

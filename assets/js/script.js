@@ -24,7 +24,7 @@ const posts = [
     category: 'reflections',
     excerpt: 'Key takeaways from class on high-voltage transmission.',
     date: '2025-11-07',
-    slug: 'hvdc-reflections-week1'
+    slug: 'reflections-hvdc-transmission-nigeria'
   },
   {
     id: 4,
